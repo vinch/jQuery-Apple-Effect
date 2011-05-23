@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #EEE url(bg.jpg) top repeat-x;
+}
+
+#container {
+	height: 909px;
+	padding-top: 150px;
+	background: url(bg-container.jpg);
+	width: 980px;
+	padding: 79px 10px 0;
+	margin: 0 auto;
+}
+
+#target {
+	height: 525px;
+	margin: 0 auto;
+	background: #FFF url(beatles.jpg) bottom no-repeat;
+}
