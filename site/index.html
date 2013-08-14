@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>jQuery Apple Effect</title>
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+<div id="content">
+
+	<h1>jQuery Apple Effect</h1>
+	<blockquote>
+		<p>jQuery plugin intended to reproduce the special effect we have seen recently on <a href="http://www.apple.com">Apple.com</a> (new MacBook Air, The Beatles on iTunes, etc.)<br />If you don't know what I'm talking about, have a look at the video below.</p>
+	</blockquote>
+	
+	<iframe src="http://player.vimeo.com/video/38115792?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="540" height="303" frameborder="0"></iframe>
+
+	<div id="documentation">
+		
+		<h2>Documentation</h2>
+		
+		<h3>Quick start</h3>
+		
+		<p>This plugin is very easy to use. Just target the element you want to highlight:</p>
+		<pre>$('#target').appleEffect();</pre>
+		
+		<h3>Options</h3>
+		
+		<p>Custom the behavior with these options:</p>
+		
+		<ul>
+			<li><code><strong>color</strong></code>: adjust the surronding boxes color. Default is <code>#FFF</code>.</li>
+			<li><code><strong>zIndex</strong></code>: adjust the surronding boxes z-index. Default is <code>9999</code>.</li>
+			<li><code><strong>timeout</strong></code>: time to wait before lauching the effect (in milliseconds). Default is <code>1000</code>.</li>
+			<li><code><strong>speed</strong></code>: duration of the effect (in milliseconds). Default is <code>1000</code>.</li>
+			<li><code><strong>callback</strong></code>: function to lauch at the end of the effect (after time <code>timeout</code> + <code>speed</code>).</li>
+		</ul>
+		
+		<p>Here is an example with all options:</p>
+		
+		<pre>$('#target').appleEffect({
+	color: '#F00',
+	zIndex: 10000,
+	timeout: 3000,
+	speed: 1200,
+	callback: function() {
+		alert('Callback triggered!');
+	}
+});</pre>
+		
+		<h3>Limitations</h3>
+		
+		<ul>
+			<li>Works only with one target at a time;</li>
+			<li>Resizing the window before or during the effect will affect it.</li>
+		</ul>
+		
+		<p><a href="mailto:vinch@1md.be?subject=I%20found%20a%20bug%20in%20jQuery%20Apple%20Effect">Report a bug</a></p>
+		
+	</div>
+
+	<div id="demo">
+		<h2>Demo</h2>
+		<p>Go to the <a href="../demo/index.html" target="_blank">demo page</a>.</p>
+	</div>
+
+	<div id="download">
+		<h2>Download</h2>
+		
+		<ul>
+			<li><strong><a href="https://github.com/vinch/jQuery-Apple-Effect/blob/master/jquery.appleEffect.js">jquery.appleEffect.js</a></strong> (1.621 KB)</li>
+			<li><strong><a href="https://github.com/vinch/jQuery-Apple-Effect/blob/master/jquery.appleEffect.pack.js">jquery.appleEffect.pack.js</a></strong> (1.327 KB)</li>
+		</ul>
+		
+		<p>This plugin requires jQuery (1.3 minimum) that you can download <a href="http://docs.jquery.com/Downloading_jQuery" target="_blank">here</a>.</p>
+	</div>
+
+	<div id="contact">
+		<h2>Contact</h2>
+		
+		<p>Don't hesitate to get in touch to <a href="mailto:vinch@1md.be?subject=I%20found%20a%20bug%20in%20jQuery%20Apple%20Effect">report a bug</a> or simply to say <a href="mailto:vinch@1md.be?subject=Hi">hi</a>!<br />If you use this plugin on your website, please <a href="mailto:vinch@1md.be?subject=I%20use%20jQuery%20Apple%20Effect%20on%20my%20website">tell us</a> so we can link it here!</p><p>This plugin has been written by <a href="http://www.vinch.be" target="_blank">Vincent Battaglia</a> from <a href="http://1md.be" target="_blank">1MD</a>.</p>
+	</div>
+
+</div>
+
+
+<div id="nav">
+
+<ul>
+	<li><a href="#documentation">Documentation</a></li>
+	<li><a href="#demo">Demo</a></li>
+	<li><a href="#download">Download</a></li>
+	<li><a href="#contact">Contact</a></li>
+</ul>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style " addthis:url="http://sandbox.1md.be/jquery.appleEffect/">
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=vinch"></script>
+<!-- AddThis Button END -->
+
+</div>
+
+<a href="#content" id="top">Back to top</a>
+
+<a href="https://github.com/vinch/jQuery-Apple-Effect"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
+
+</body>
+</html>
